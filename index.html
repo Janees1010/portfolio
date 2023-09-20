@@ -243,13 +243,15 @@
 
 
            function res(){
-             if(validname(),validEmail())
-                alert("DATA SUCCESFULLY SUBMITED!!!!")
-                
-        
-           else{
-             alert('DATA IS EMPTY!!!!')
+               
+            if(!validname()){
+                alert("ENTER NAME !!!")
+           }else if(!validEmail()){
+               alert("ENTER EMAIL!!!")
+           } else{
+             alert('DATA SUCCESSFULLY SUBMITED !!!!')
           }
+         
          
     }
   
