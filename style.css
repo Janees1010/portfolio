@@ -234,7 +234,7 @@ transition: background 0.8s,transform 0,8s;
 }
 .service-list div:hover {
 transform: translateY(-10px);
-background:darkblue;
+background:#ff004f;
 transition: 0.5s;
 
 }
