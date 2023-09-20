@@ -43,7 +43,7 @@
 
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p class="container">i am a full stack developer with experience in backend development i have a strong command over both frontend and backend allowing me to build complete scalable web applications on the frontend side i spexialize in html css javascript and framework such as react 
+                    <p class="container">i am a full stack developer with experience in backend development i have a strong command over both frontend and backend allowing me to build complete scalable web applications on the frontend side i specialize in html css javascript and framework such as react 
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-links "   onclick="opentab('skills')"> Skills</p>
@@ -61,7 +61,7 @@
                         <p><span class="text-danger fw-bold"> user interfaces</span><br>design / develop  user interfaces</p>
                      </div>
                      <div class="tab-contents" id="education">
-                        <p><span class="text-danger fw-bold">online courses</span><br>completed full stack development  courses</p>
+                        <p><span class="text-danger fw-bold">online courses</span><br>completed full stack development certified courses</p>
                         <p><span class="text-danger fw-bold">bootcamps</span><br>learned basic coding from bootcamps</p>
                         <p><span class="text-danger fw-bold">you tube</span><br> learned latest features and programs</p>
                      </div>
@@ -113,11 +113,11 @@
                 </div>
                 <div class="contact-right">
                      <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder=" Name" required><br>
-                        <input type="email" name="email" placeholder=" Email" required><br>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea><br>
+                        <input type="text" name="name" placeholder=" Name" id="name" onkeyup="validname()" required><p id="display-name"></p>
+                        <input type="email" name="email"  placeholder=" Email" id="emailcheck" onkeyup="validEmail()" required><p id="valid"></p>
+                        <textarea name="message" rows="6" placeholder="Your Message"id="textarea" onkeyup="validmessage()"></textarea><p id="text"></p><br>
                         
-                        <button type="submit" onclick="msgo()">Submit</button>
+                        <button type="submit" onclick="res()">Submit</button>
                         <button id="reset-btn" type="reset">Reset</button>
                         
                      </form>
@@ -172,9 +172,90 @@
             })
           </script>
           <script>
-            function msg(){
-                window.alert('your message succesfully sented')
+            function validname(){
+                let value = document.getElementById('name').value;
+                let reg = /^[a-z A-Z]+$/i
+
+                let output = reg.test(value);
+
+                if(output){
+                   document.getElementById('display-name').innerHTML='verified <i class="fa-solid fa-circle-check"></i>';
+                   document.getElementById('display-name').style.color = 'green';
+                   document.getElementById('name').style.border = '1px solid green';
+                     
+                   
+                  return true;
+                }
+                else {
+                    document.getElementById('display-name').innerHTML='enter a valid name';
+                    document.getElementById('display-name').style.color='red';
+                    document.getElementById('name').style.border = '1px solid red';
+                   return false;
+
+                
+                
             }
-          </script>
+        }
+            function validEmail(){
+                var email = document.getElementById('emailcheck').value;
+                 var x = /^[a-z0-9 \._\-]+@[a-z]+\.[a-z]{2,4}$/i;
+                if (x.test(email)){
+                    document.getElementById('valid').innerHTML='verified <i class="fa-solid fa-circle-check"></i>'
+                    document.getElementById('valid').style.color='green';
+                    document.getElementById('emailcheck').style.border = '1px solid green';
+                     
+                    return true;
+    
+                }
+                else{
+                    document.getElementById('valid').innerHTML='enter  a valid email';
+                    document.getElementById('valid').style.color='red'
+                    document.getElementById('emailcheck').style.border = '1px solid red';
+                     
+
+                    return false;
+                }
+                   
+
+
+
+
+            }
+            function validmessage(){
+                let a = document.getElementById('textarea').value;
+                let b = /^[a-zA-Z 0-9 ]{6,}$/
+                let za = b.test(a)
+
+                if(za){
+                    document.getElementById('text').innerHTML='verified <i class="fa-solid fa-circle-check"></i>';
+                    document.getElementById('text').style.color='green'
+                    document.getElementById('textarea').style.border = '1px solid green';
+                     
+
+                }else{
+                    document.getElementById('text').innerHTML='minimu length six'
+                    document.getElementById('text').style.color='red'
+                    document.getElementById('textarea').style.border = '1px solid red';
+                     
+                 
+                }
+            }
+
+
+           function res(){
+             if(validname(),validEmail())
+                alert("DATA SUCCESFULLY SUBMITED!!!!")
+                
+        
+           else{
+             alert('DATA IS EMPY!!!!')
+          }
+         
+    }
+  
+        
+ </script>
 </body>
 </html>
+   
+     
