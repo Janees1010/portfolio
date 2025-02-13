@@ -1,262 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/25e8cb4e30.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/25e8cb4e30.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <h1 id="portfolio">portfolio</h1>
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#home1">Home</a></li>
-                    <li><a href="#about1">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i id="none" class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
-                </ul>
-                <i id="none2" class="fa-solid fa-bars"onclick="openmenu()"></i>
-            </nav>
-        </div>
+      <div class="header-container">
+        <h1 id="portfolio">portfolio</h1>
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#home1">Home</a></li>
+            <li><a href="#about1">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              id="none"
+              class="fa-solid fa-circle-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i id="none2" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
     </header>
-    <section1 class="home " id="home1">
-       <div class="home-content">
-        <h1 class=""  id="home-name">Hi , I'm <span class="text-danger">Janees</span></h1>
-        <h2 id="sub-name"class="" > full stack developer<br></h2>
-       </div>
-     
-        
+    <section1 class="home" id="home1">
+      <div class="home-content">
+        <h1 class="" id="home-name">
+          Hi , I'm <span class="text-danger">Janees</span>
+        </h1>
+        <h2 id="sub-name" class="">full stack developer<br /></h2>
+      </div>
     </section1>
 
     <!----- about ---->
     <div class="about" id="about1">
-        <div class="about-container">
-            <div class="about-row">
-                <div class="about-col-1">
-                     <img src="https://burst.shopifycdn.com/photos/developer-coding-in-php.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
-                </div>
+      <div class="about-container">
+        <div class="about-row">
+          <div class="about-col-1">
+            <img
+              src="https://burst.shopifycdn.com/photos/developer-coding-in-php.jpg?width=1000&format=pjpg&exif=0&iptc=0"
+              alt=""
+            />
+          </div>
 
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="container">i am a full stack developer with experience in backend development i have a strong command over both frontend and backend allowing me to build complete scalable web applications on the frontend side i specialize in html css javascript and framework such as react 
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-links "   onclick="opentab('skills')"> Skills</p>
-                        <p class="tab-links active-links"    onclick="opentab('projects')">Projects</p>
-                        <p class="tab-links active-links"    onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab " id="skills">
-                       <P><spa class="text-danger min-w fw-bold ">Languages</spa><br> Javascript , Typescript , Sql , MongoDb</P>
-                       <p><span class="text-danger fw-bold">Libraries & Frameworks</span><br>Express.js , react.js , Next.js , Node.js , Socket.io</p>
-                       <p><span class="text-danger fw-bold">Tools And Platforms</span><br>Docker , git ,Github , Render ,Vercel , aws</p>
-                       <p><span class="text-danger fw-bold">Architecture</span><br>Mvc , microservice , SOLID , Clean Architecture </p>
-                    </div>
-                    <div class="tab-contents" id="projects">
-                        <p><span class="text-danger fw-bold">Cloudy</span><br>A Cloud Storage System similar to Google Drive <br> that allows users to securely upload and manage files and folders</p>
-                        <p><span class="text-danger fw-bold">FARFETCH</span><br>A E-Comerce store built in microservice architecture <br>which includes cart, orders , crud , admin panel</p>
-                        <p><span class="text-danger fw-bold">Messenger</span><br>A Real time chat application using Socker.io <br> allow users to have private and group chat</p>
-                     </div>
-                     <div class="tab-contents" id="education">
-                        <p><span class="text-danger fw-bold">MERN Stack development</span><br>Stackup</p>
-                        <p><span class="text-danger fw-bold">Highrer Secondory</span><br>Aihss padoor</p>
-                     </div>
-                </div>
-
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="container">
+              i am a full stack developer with experience in backend development
+              i have a strong command over both frontend and backend allowing me
+              to build complete scalable web applications on the frontend side i
+              specialize in html css javascript and framework such as react
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links active-links" onclick="opentab('projects')">
+                Projects
+              </p>
+              <p class="tab-links active-links" onclick="opentab('education')">
+                Education
+              </p>
             </div>
-
-        </div>
-        <div id="services">
-            <div class="services-container">
-                <h1 class="sub-title">Services</h1>
-                <div class="service-list">
-                    <div class="service-box">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>web designing</h2>
-                        <p>Web design is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience.</p>
-                        <a class="service-link" href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
-                    </div>
-                    <div class="service-box">
-                        <i class="fa-brands fa-connectdevelop"></i>
-                        <h2>web development</h2>
-                        <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
-                        <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
-                    </div>
-                    <div class="service-box">
-                        <i class="fa-brands fa-react"></i>
-                        <h2>react Web apps</h2>
-                        <p>React JS is a JavaScript library used in web development to build interactive elements on websites.</p>
-                        
-                        <a class="service-link2" href="https://react.dev/">Learn more</a>
-                    </div>
-                </div>
+            <div class="tab-contents active-tab" id="skills">
+              <p>
+                <spa class="text-danger min-w fw-bold">Languages</spa><br />
+                Javascript , Typescript , Sql , MongoDb
+              </p>
+              <p>
+                <span class="text-danger fw-bold">Libraries & Frameworks</span
+                ><br />Express.js , react.js , Next.js , Node.js , Socket.io
+              </p>
+              <p>
+                <span class="text-danger fw-bold">Tools And Platforms</span
+                ><br />Docker , git ,Github , Render ,Vercel , aws
+              </p>
+              <p>
+                <span class="text-danger fw-bold">Architecture</span><br />Mvc ,
+                microservice , SOLID , Clean Architecture
+              </p>
             </div>
+            <div class="tab-contents" id="projects">
+              <p>
+                <span class="text-danger fw-bold">Cloudy</span><br />A Cloud
+                Storage System similar to Google Drive <br />
+                that allows users to securely upload and manage files and
+                folders
+              </p>
+              <p>
+                <span class="text-danger fw-bold">FARFETCH</span><br />A
+                E-Comerce store built in microservice architecture <br />which
+                includes cart, orders , crud , admin panel
+              </p>
+              <p>
+                <span class="text-danger fw-bold">Messenger</span><br />A Real
+                time chat application using Socker.io <br />
+                allow users to have private and group chat
+              </p>
+            </div>
+            <div class="tab-contents" id="education">
+              <p>
+                <span class="text-danger fw-bold">MERN Stack development</span
+                ><br />Stackup
+              </p>
+              <p>
+                <span class="text-danger fw-bold">Highrer Secondory</span
+                ><br />Aihss padoor
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div id="services">
+        <div class="services-container">
+          <h1 class="sub-title">Services</h1>
+          <div class="service-list">
+            <div class="service-box">
+              <i class="fa-solid fa-code"></i>
+              <h2>web designing</h2>
+              <p>
+                Web design is the creation of websites and pages to reflect a
+                company's brand and information and ensure a user-friendly
+                experience.
+              </p>
+              <a
+                class="service-link"
+                href="https://en.wikipedia.org/wiki/Web_design"
+                >Learn more</a
+              >
+            </div>
+            <div class="service-box">
+              <i class="fa-brands fa-connectdevelop"></i>
+              <h2>web development</h2>
+              <p>
+                Web development refers to the creating, building, and
+                maintaining of websites. It includes aspects such as web design,
+                web publishing, web programming, and database management.
+              </p>
+              <a href="https://en.wikipedia.org/wiki/Web_development"
+                >Learn more</a
+              >
+            </div>
+            <div class="service-box">
+              <i class="fa-brands fa-react"></i>
+              <h2>react Web apps</h2>
+              <p>
+                React JS is a JavaScript library used in web development to
+                build interactive elements on websites.
+              </p>
+
+              <a class="service-link2" href="https://react.dev/">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="contact">
-        <div class="contact-container">
-            
-                <div class="contact-left">
-                    <h1 id="contact-head"class="sub-title">Contact me</h1>
-                    <p><i class="fa-regular fa-envelope fa-bounce text-danger" ></i>janeesleo55@gmail.com</p>
-                    <p><i class="fa-solid fa-phone text-danger"></i>7736528765</p>
-                    <div class="icons">
-                        <a href="https://instagram.com/__janees___?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/janees-ph-641324286"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                     <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder=" Name" id="name" onkeyup="validname()" required><p id="display-name"></p>
-                        <input type="email" name="email"  placeholder=" Email" id="emailcheck" onkeyup="validEmail()" required><p id="valid"></p>
-                        <textarea name="message" rows="6" placeholder="Your Message"id="textarea" onkeyup="validmessage()"required></textarea><p id="text"></p><br>
-                        
-                        <button type="submit" onclick="res()">Submit</button>
-                        <button id="reset-btn" type="reset">Reset</button>
-                        
-                     </form> 
-                    
-                     
-
-                    
-            
-            </div>
+      <div class="contact-container">
+        <div class="contact-left">
+          <h1 id="contact-head" class="sub-title">Contact me</h1>
+          <p>
+            <i class="fa-regular fa-envelope fa-bounce text-danger"></i
+            >janeesleo55@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone text-danger"></i>7736528765</p>
+          <div class="icons">
+            <a href="https://instagram.com/__janees___?igshid=NzZlODBkYWE4Ng=="
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/janees-ph-641324286"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input
+              type="text"
+              name="name"
+              placeholder=" Name"
+              id="name"
+              onkeyup="validname()"
+              required
+            />
+            <p id="display-name"></p>
+            <input
+              type="email"
+              name="email"
+              placeholder=" Email"
+              id="emailcheck"
+              onkeyup="validEmail()"
+              required
+            />
+            <p id="valid"></p>
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              id="textarea"
+              onkeyup="validmessage()"
+              required
+            ></textarea>
+            <p id="text"></p>
+            <br />
+
+            <button type="submit" onclick="res()">Submit</button>
+            <button id="reset-btn" type="reset">Reset</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- <footer >
           <i class="fa-solid fa-desktop fa-flip"></i>Developer<i class="fa-solid fa-arrow-right fa-shake"></i> Janees <br> &copy;Copyright 2023 
      </footer> -->
 
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        <script>
-            var tablinks = document.getElementsByClassName('tab-links');
-            var tabcontents=document.getElementsByClassName('tab-contents')
-
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove('active-links')
-                }
-
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove('active-tab')
-                }
-                event.currentTarget.classList.add('active-links');
-                document.getElementById(tabname).classList.add('active-tab')
-            }
-        </script> 
-        <script>
-             var sidemenu=document.getElementById('sidemenu');
-             function openmenu(){
-                sidemenu.style.right="0"
-             }
-             function closemenu(){
-                sidemenu.style.right="-150px"
-             }
-        </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyFNWO9tSnUCgSSukmGFv23gygrKfxE40W7i361AtdVO5kBYnPh8HmNWymW8V0rPA/exec'
-            const form = document.forms['submit-to-google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-          <script>
-            function validname(){
-                let value = document.getElementById('name').value;
-                let reg = /^[a-z A-Z]+$/i
-
-                let output = reg.test(value);
-
-                if(output){
-                   document.getElementById('display-name').innerHTML='verified <i class="fa-solid fa-circle-check"></i>';
-                   document.getElementById('display-name').style.color = 'green';
-                   document.getElementById('name').style.border = '1px solid green';
-                     
-                   
-                  return true;
-                }
-                else {
-                    document.getElementById('display-name').innerHTML='enter a valid name';
-                    document.getElementById('display-name').style.color='red';
-                    document.getElementById('name').style.border = '1px solid red';
-                   return false;
-
-                
-                
-            }
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
         }
-            function validEmail(){
-                var email = document.getElementById('emailcheck').value;
-                 var x = /^[a-z0-9 \._\-]+@[a-z]+\.[a-z]{2,4}$/i;
-                if (x.test(email)){
-                    document.getElementById('valid').innerHTML='verified <i class="fa-solid fa-circle-check"></i>'
-                    document.getElementById('valid').style.color='green';
-                    document.getElementById('emailcheck').style.border = '1px solid green';
-                     
-                    return true;
-    
-                }
-                else{
-                    document.getElementById('valid').innerHTML='enter  a valid email';
-                    document.getElementById('valid').style.color='red'
-                    document.getElementById('emailcheck').style.border = '1px solid red';
-                     
 
-                    return false;
-                }
-                   
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-150px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyFNWO9tSnUCgSSukmGFv23gygrKfxE40W7i361AtdVO5kBYnPh8HmNWymW8V0rPA/exec";
+      const form = document.forms["submit-to-google-sheet"];
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      function validname() {
+        let value = document.getElementById("name").value;
+        let reg = /^[a-z A-Z]+$/i;
 
+        let output = reg.test(value);
 
+        if (output) {
+          document.getElementById("display-name").innerHTML =
+            'verified <i class="fa-solid fa-circle-check"></i>';
+          document.getElementById("display-name").style.color = "green";
+          document.getElementById("name").style.border = "1px solid green";
 
-            }
-            function validmessage(){
-                let a = document.getElementById('textarea').value;
-                let b = /^[a-zA-Z 0-9 ]{6,}$/
-                let za = b.test(a)
+          return true;
+        } else {
+          document.getElementById("display-name").innerHTML =
+            "enter a valid name";
+          document.getElementById("display-name").style.color = "red";
+          document.getElementById("name").style.border = "1px solid red";
+          return false;
+        }
+      }
+      function validEmail() {
+        var email = document.getElementById("emailcheck").value;
+        var x = /^[a-z0-9 \._\-]+@[a-z]+\.[a-z]{2,4}$/i;
+        if (x.test(email)) {
+          document.getElementById("valid").innerHTML =
+            'verified <i class="fa-solid fa-circle-check"></i>';
+          document.getElementById("valid").style.color = "green";
+          document.getElementById("emailcheck").style.border =
+            "1px solid green";
 
-                if(za){
-                    document.getElementById('text').innerHTML='verified <i class="fa-solid fa-circle-check"></i>';
-                    document.getElementById('text').style.color='green'
-                    document.getElementById('textarea').style.border = '1px solid green';
-                     
+          return true;
+        } else {
+          document.getElementById("valid").innerHTML = "enter  a valid email";
+          document.getElementById("valid").style.color = "red";
+          document.getElementById("emailcheck").style.border = "1px solid red";
 
-                }else{
-                    document.getElementById('text').innerHTML='minimu length six'
-                    document.getElementById('text').style.color='red'
-                    document.getElementById('textarea').style.border = '1px solid red';
-                     
-                 
-                }
-            }
+          return false;
+        }
+      }
+      function validmessage() {
+        let a = document.getElementById("textarea").value;
+        let b = /^[a-zA-Z 0-9 ]{6,}$/;
+        let za = b.test(a);
 
+        if (za) {
+          document.getElementById("text").innerHTML =
+            'verified <i class="fa-solid fa-circle-check"></i>';
+          document.getElementById("text").style.color = "green";
+          document.getElementById("textarea").style.border = "1px solid green";
+        } else {
+          document.getElementById("text").innerHTML = "minimu length six";
+          document.getElementById("text").style.color = "red";
+          document.getElementById("textarea").style.border = "1px solid red";
+        }
+      }
 
-           function res(){
-    
-           if(!validname()){
-                alert("ENTER NAME !!!")
-           }else if(!validEmail()){
-               alert("ENTER EMAIL!!!")
-           } else{
-             alert('DATA SUCCESSFULLY SUBMITED !!!!')
-          }
-         
-    }
-  
-        
- </script>
-</body>
+      function res() {
+        if (!validname()) {
+          alert("ENTER NAME !!!");
+        } else if (!validEmail()) {
+          alert("ENTER EMAIL!!!");
+        } else {
+          alert("DATA SUCCESSFULLY SUBMITED !!!!");
+        }
+      }
+    </script>
+  </body>
 </html>
-   
-     
