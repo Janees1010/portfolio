@@ -8,6 +8,10 @@
 html{
     scroll-behavior: smooth;
 }
+/* 
+.min-w {
+    max-width: 100px        ;
+} */
 
 .header-container{
     background-color: black;
@@ -16,11 +20,7 @@ html{
     height:100%;
     display:flex;
     flex-direction: row;
-
-     justify-content: space-around;
-    
-    
-    
+    justify-content: space-around;
     
 }
 
@@ -234,7 +234,7 @@ transition: background 0.8s,transform 0,8s;
 }
 .service-list div:hover {
 transform: translateY(-10px);
-background:darkblue;
+background:#ff004f;
 transition: 0.5s;
 
 }
@@ -275,7 +275,7 @@ transition: 0.5s;
     width:500px;
     height:55px;
     background: black;
-    margin-block-end: 20px;
+    
     padding-inline-start: 50px;
     font-size: 20px;;
     border:none;
@@ -288,7 +288,8 @@ transition: 0.5s;
     background: black;
     font-size: 20px;
     padding-inline-start: 50px;
-    padding-block-start: 20px;
+    padding:30px
+    
 }
 .contact-left i{
 font-size: 25px;
@@ -296,8 +297,8 @@ padding-inline-end: 15px;
 color:lightgrey;
 }
 .contact-right button{
-    margin-block-start: 50px;
-    margin-inline-start: 50px;
+    margin-block-start: 10px;
+    /* margin-inline-start: 50px; */
     border:1px black;
     border-radius: 7px;
     padding:10px 30px;
